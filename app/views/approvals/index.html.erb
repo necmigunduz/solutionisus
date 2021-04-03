@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Approvals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Solution suggestion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @approvals.each do |approval| %>
+      <tr>
+        <td><%= approval.user_id %></td>
+        <td><%= approval.solution_suggestion_id %></td>
+        <td><%= link_to 'Show', approval %></td>
+        <td><%= link_to 'Edit', edit_approval_path(approval) %></td>
+        <td><%= link_to 'Destroy', approval, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Approval', new_approval_path %>

@@ -1,0 +1,27 @@
+<%= form_with(model: scientific_fact) do |form| %>
+  <% if scientific_fact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(scientific_fact.errors.count, "error") %> prohibited this scientific_fact from being saved:</h2>
+
+      <ul>
+        <% scientific_fact.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :scientific_fact_title %>
+    <%= form.text_field :scientific_fact_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scienctific_fact_definition %>
+    <%= form.text_field :scienctific_fact_definition %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

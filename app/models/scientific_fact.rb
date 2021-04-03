@@ -1,0 +1,2 @@
+class ScientificFact < ApplicationRecord
+end

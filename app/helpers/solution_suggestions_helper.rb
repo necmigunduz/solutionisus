@@ -1,0 +1,2 @@
+module SolutionSuggestionsHelper
+end

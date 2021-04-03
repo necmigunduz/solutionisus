@@ -1,0 +1,27 @@
+<%= form_with(model: social_fact) do |form| %>
+  <% if social_fact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(social_fact.errors.count, "error") %> prohibited this social_fact from being saved:</h2>
+
+      <ul>
+        <% social_fact.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :social_fact_title %>
+    <%= form.text_field :social_fact_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :social_fact_definition %>
+    <%= form.text_field :social_fact_definition %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

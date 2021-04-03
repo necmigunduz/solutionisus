@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Social fact title:</strong>
+  <%= @social_fact.social_fact_title %>
+</p>
+
+<p>
+  <strong>Social fact definition:</strong>
+  <%= @social_fact.social_fact_definition %>
+</p>
+
+<%= link_to 'Edit', edit_social_fact_path(@social_fact) %> |
+<%= link_to 'Back', social_facts_path %>

@@ -1,0 +1,27 @@
+<%= form_with(model: solution_suggestion) do |form| %>
+  <% if solution_suggestion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(solution_suggestion.errors.count, "error") %> prohibited this solution_suggestion from being saved:</h2>
+
+      <ul>
+        <% solution_suggestion.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :problem_id %>
+    <%= form.text_field :problem_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
