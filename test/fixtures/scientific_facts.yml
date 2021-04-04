@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scientific_fact_title: MyString
+  scienctific_fact_definition: MyString
+
+two:
+  scientific_fact_title: MyString
+  scienctific_fact_definition: MyString

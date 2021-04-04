@@ -1,0 +1,7 @@
+<h1>Sign up</h1>
+
+<%= render 'form', user: @user %> <br>
+
+<span>You have already got an account?</span> <br>
+<%= link_to 'Sign in', new_session_path %> <br> <br>
+<%= link_to 'Back', users_path %>

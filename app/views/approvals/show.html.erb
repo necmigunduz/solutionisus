@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @approval.user_id %>
+</p>
+
+<p>
+  <strong>Solution suggestion:</strong>
+  <%= @approval.solution_suggestion_id %>
+</p>
+
+<%= link_to 'Edit', edit_approval_path(@approval) %> |
+<%= link_to 'Back', approvals_path %>

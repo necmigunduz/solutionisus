@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Scientific fact title:</strong>
+  <%= @scientific_fact.scientific_fact_title %>
+</p>
+
+<p>
+  <strong>Scienctific fact definition:</strong>
+  <%= @scientific_fact.scienctific_fact_definition %>
+</p>
+
+<%= link_to 'Edit', edit_scientific_fact_path(@scientific_fact) %> |
+<%= link_to 'Back', scientific_facts_path %>
