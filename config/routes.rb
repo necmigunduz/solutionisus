@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sessions
   resources :approvals
   resources :solution_suggestions
   resources :scientific_facts

@@ -1,0 +1,7 @@
+<%= form_with scope: :user, url: '/sessions' do |form| %>
+  <%= form.label :username, class:"font-weight-bold" %>
+  <%= form.text_field :username, placeholder: "Enter your username" %> 
+  <%= form.label :password, class:"font-weight-bold" %>
+  <%= form.text_field :password, placeholder: "Enter your password" %> <br><br>
+  <%= form.submit "Sign in" %>
+<% end %>
